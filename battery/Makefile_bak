@@ -1,0 +1,131 @@
+
+
+ALL_FILE += \
+		   ./build/Objects/common/dji_linux_environment.o \
+		   ./build/Objects/platform/linux/hal/osdkhal_linux.o \
+		   ./build/Objects/platform/linux/osal/osdkosal_linux.o \
+		   ./build/Objects/common/dji_linux_helpers.o \
+		   ./build/Objects/osdk-core/api/src/dji_battery.o \
+		   ./build/Objects/osdk-core/logger/src/dji_log.o \
+		   ./build/Objects/osdk-core/api/src/dji_battery_impl.o \
+		   ./build/Objects/osdk-core/api/src/dji_version.o \
+		   ./build/Objects/osdk-core/utility/src/dji_setup_helpers.o \
+		   ./build/Objects/osdk-core/platform/src/dji_platform.o \
+		   ./build/Objects/osdk-core/api/src/dji_vehicle.o \
+		   ./build/Objects/osdk-core/api/src/dji_ack.o \
+		   ./build/Objects/osdk-core/api/src/dji_camera.o \
+		   ./build/Objects/osdk-core/api/src/dji_gimbal.o \
+		   ./build/Objects/osdk-core/api/src/dji_subscription.o \
+		   ./build/Objects/osdk-core/api/src/dji_error.o \
+		   ./build/Objects/osdk-core/api/src/dji_command.o \
+		   ./build/Objects/osdk-core/api/src/dji_mfio.o \
+		   ./build/Objects/osdk-core/api/src/dji_legacy_linker.o \
+		   ./build/Objects/osdk-core/api/src/dji_mobile_device.o \
+		   ./build/Objects/osdk-core/api/src/dji_payload_device.o \
+		   ./build/Objects/osdk-core/advanced-sensing/api/src/dji_advanced_sensing.o \
+		   ./build/Objects/osdk-core/advanced-sensing/camera_stream/src/dji_camera_stream.o \
+		   ./build/Objects/osdk-core/api/src/dji_camera_manager.o \
+		   ./build/Objects/osdk-core/api/src/dji_psdk_manager.o \
+		   ./build/Objects/osdk-core/advanced-sensing/api/src/dji_liveview_impl.o \
+		   ./build/Objects/osdk-core/advanced-sensing/api/src/dji_liveview.o \
+		   ./build/Objects/osdk-core/advanced-sensing/api/src/dji_perception_impl.o \
+		   ./build/Objects/osdk-core/advanced-sensing/api/src/dji_perception.o \
+		   ./build/Objects/osdk-core/api/src/dji_broadcast.o \
+		   ./build/Objects/osdk-core/api/src/dji_mission_manager.o \
+		   ./build/Objects/osdk-core/modules/src/firewall/osdk_firewall.o \
+		   ./build/Objects/osdk-core/api/src/dji_waypoint_v2.o \
+		   ./build/Objects/osdk-core/api/src/dji_hms.o \
+		   ./build/Objects/osdk-core/api/src/dji_flight_controller.o \
+		   ./build/Objects/osdk-core/advanced-sensing/ori-osdk-core/utility/src/dji_singleton.hpp \
+		   ./build/Objects/osdk-core/api/src/dji_hardware_sync.hpp \
+		   ./build/Objects/osdk-core/api/src/dji_hotpoint.hpp \
+		   ./build/Objects/osdk-core/api/src/dji_waypoint.hpp \
+		   ./build/Objects/osdk-core/modules/src/payload/dji_camera_module.hpp \
+		   ./build/Objects/osdk-core/modules/src/payload/dji_payload_base.hpp \
+		   ./build/Objects/osdk-core/modules/src/filemgr/dji_file_mgr.hpp \
+		   ./build/Objects/osdk-core/modules/src/filemgr/dji_file_mgr_define.hpp \
+		   ./build/Objects/osdk-core/api/src/dji_gimbal_manager.hpp \
+		   ./build/Objects/osdk-core/modules/src/payload/dji_gimbal_module.hpp \
+		   ./build/Objects/osdk-core/modules/src/payload/dji_payload_link.hpp \
+		   ./build/Objects/osdk-core/modules/src/flight/dji_flight_assistant_module.hpp \
+		   ./build/Objects/osdk-core/modules/src/flight/dji_flight_joystick_module.hpp \
+		   ./build/Objects/osdk-core/modules/src/payload/dji_psdk_module.hpp \
+		   ./build/Objects/osdk-core/modules/src/mop/dji_mop_client.hpp \
+		   ./build/Objects/osdk-core/modules/src/mop/dji_mop_pipeline.hpp \
+		   ./build/Objects/osdk-core/modules/src/mop/dji_mop_define.hpp \
+		   ./build/Objects/osdk-core/modules/src/mop/dji_mop_pipeline_manager_base.hpp \
+		   ./build/Objects/osdk-core/modules/src/mop/dji_mop_server.hpp \
+		   ./build/Objects/osdk-core/advanced-sensing/camera_stream/src/dji_camera_stream_decoder.o \
+		   ./build/Objects/osdk-core/advanced-sensing/protocol/src/dji_advanced_sensing_protocol.o \
+		   ./build/Objects/osdk-core/advanced-sensing/camera_stream/src/dji_camera_stream_link.o \
+		   ./build/Objects/osdk-core/modules/src/filemgr/impl/commondatarangehandler.o \
+		   ./build/Objects/osdk-core/api/src/dji_hms_impl.o \
+		   ./build/Objects/osdk-core/api/src/dji_hms_internal.o \
+		   ./build/Objects/osdk-core/modules/src/filemgr/impl/mmap_file_buffer.o \
+		   ./build/Objects/osdk-core/advanced-sensing/camera_stream/udt/src/api.o \
+		   ./build/Objects/osdk-core/modules/src/filemgr/impl/dji_file_mgr_impl.o \
+		   ./build/Objects/osdk-core/modules/src/filemgr/impl/downloadbufferqueue.o \
+		   ./build/Objects/osdk-core/advanced-sensing/camera_stream/udt/src/buffer.o \
+		   ./build/Objects/osdk-core/advanced-sensing/camera_stream/udt/src/cache.o \
+		   ./build/Objects/osdk-core/advanced-sensing/camera_stream/udt/src/ccc.o \
+		   ./build/Objects/osdk-core/advanced-sensing/camera_stream/udt/src/channel.o \
+		   ./build/Objects/osdk-core/advanced-sensing/camera_stream/udt/src/common.o \
+		   ./build/Objects/osdk-core/advanced-sensing/camera_stream/udt/src/core.o \
+		   ./build/Objects/osdk-core/advanced-sensing/camera_stream/udt/src/epoll.o \
+		   ./build/Objects/osdk-core/advanced-sensing/camera_stream/udt/src/list.o \
+		   ./build/Objects/osdk-core/advanced-sensing/camera_stream/udt/src/md5.o \
+		   ./build/Objects/osdk-core/advanced-sensing/camera_stream/udt/src/packet.o \
+		   ./build/Objects/osdk-core/advanced-sensing/camera_stream/udt/src/queue.o \
+		   ./build/Objects/osdk-core/advanced-sensing/camera_stream/udt/src/window.o \
+		   ./build/Objects/osdk-core/advanced-sensing/camera_stream/src/dji_camera_image_handler.o \
+		   ./build/Objects/osdk-core/modules/src/flight/dji_flight_actions_module.o \
+		   ./build/Objects/osdk-core/modules/src/flight/dji_flight_link.o   \
+		   ./build/Objects/osdk-core/advanced-sensing/ori-osdk-core/protocol/src/dji_protocol_base.o \
+		   ./build/Objects/osdk-core/advanced-sensing/ori-osdk-core/hal/src/dji_thread_manager.o \
+		   ./build/Objects/osdk-core/advanced-sensing/ori-osdk-core/platform/linux/src/posix_thread_manager.o \
+		   ./build/Objects/osdk-core/advanced-sensing/platform/src/linux_usb_device.o \
+		   ./build/Objects/osdk-core/advanced-sensing/ori-osdk-core/hal/src/dji_hard_driver.o \
+		   ./build/Objects/osdk-core/advanced-sensing/ori-osdk-core/hal/src/dji_memory.o \
+		   /home/lan/comdin/Dji_SDK/mysample/build/Objects/osdk-core/api/src/dji_control.o \
+		   /usr/lib/x86_64-linux-gnu/libusb-1.0.so \
+		   /usr/local/lib/libavcodec.a \
+		   /usr/local/lib/libavformat.a \
+		   /usr/local/lib/libavutil.a \
+		   /usr/local/lib/libswresample.a \
+		   /usr/local/lib/libswscale.a \
+		   /usr/lib/x86_64-linux-gnu/libz.so \
+		   ./osdk-core/linker/x86/lib/libdji-linker.a \
+		   /usr/local/lib/libavcodec.a \
+		   /usr/local/lib/libavformat.a \
+		   /usr/local/lib/libavutil.a \
+		   /usr/local/lib/libswscale.a \
+		   /usr/lib/x86_64-linux-gnu/libz.so \
+
+#ALL_FILE += $(shell find ../ -name *.o)
+
+ALL_FILE_O = $(patsubst %.hpp,%.o,$(ALL_FILE))
+ALL_FILE_H = $(patsubst %.hpp,%.o,$(ALL_FILE_O))
+ALL_NO_MAIN = $(patsubst %/main.o, %,$(ALL_FILE_H))
+
+#ALL_NO_MAIN = $(filter-out %mian.o,$(ALL_FILE_H))
+#ALL_FILES = $(sort $(ALL_NO_MAIN))
+ALL_FILES = $(ALL_NO_MAIN)
+#$(info ALL_FILE = $(ALL_FILE))
+
+#����ͬ��Ŀ¼�µ�makefile����ͬ����Ľ���
+CUR_CSOURCE_FILE=${wildcard *.c}
+CUR_SSOURCE_FILE=${wildcard *.s}
+CUR_CXXOURCE_FILE=${wildcard *.cpp}
+
+CUR_COBJS=${patsubst %.c, %.o, $(CUR_CSOURCE_FILE)}
+CUR_SOBJS=${patsubst %.s, %.o, $(CUR_SSOURCE_FILE)}
+CUR_CXXOBJS=${patsubst %.cpp, %.o, $(CUR_SSOURCE_FILE)}
+
+#$(info $(ALL_FILES))
+CUR_INCLUDE_DIR = ${patsubst ./%, $(ROOT_DIR)/%, $(INCLUDE_DIR)}
+
+all:
+	$(CXX)  ./build/Objects/battery/main.o $(ALL_FILES) -pthread -g -fPIC -g -o battary
+
+ECHO:
+	@echo $(SUBDIRS)
